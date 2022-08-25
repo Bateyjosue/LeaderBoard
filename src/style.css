@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+:root {
+  --b-shadow: 5px 5px 5px black;
+
+}
+/* Typography */
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+main h1 {
+  font-size: 2.3rem;
+}
+
+.board-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.board-all {
+  width: 55%;
+}
+
+.board-all h3, .board-new h3 {
+  margin-bottom:1rem;
+}
+
+.board-all h3 a {
+  text-decoration: none;
+  color:black;
+  border: 2px solid black;
+  padding: .2rem 1rem;
+  margin-left: 1rem;
+  box-shadow: var(--b-shadow);
+}
+
+.board-container .scores {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.board-container .scores li {
+  padding: .3rem;
+}
+
+.board-container .scores li:nth-child(even) {
+  background: #ddd;
+}
+
+.board-new form div {
+  margin-bottom: 1rem;
+}
+
+.field-input input {
+  padding: .3rem;
+  border: 2px solid black;
+}
+
+.field-input input[type="submit"] {
+  box-shadow: var(--b-shadow); 
+  padding: .2rem 1rem;
+}
+
+.btn {
+  display:flex;
+  justify-content: flex-end;
+}
