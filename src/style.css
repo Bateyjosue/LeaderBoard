@@ -64,6 +64,12 @@ main h1 {
   font-weight: 900;
 }
 
+.board-all h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .board-container .scores {
   border: 2px solid var(--bg);
   width: 100%;
