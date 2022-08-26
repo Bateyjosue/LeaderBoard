@@ -24,7 +24,29 @@
 - Project 3: final touches.
 
 # Setup
+[-] Clone the repository:
 
+    $ git clone https://github.com/Bateyjosue/LoaderBoard.git`
+
+[-] Navigate into the project folfer
+
+    $ cd loaderBoard
+
+[-] Install dependencies of the project using `npm` package manager
+
+    $ npm i || npm install
+
+[-] Run the project 
+
+    $ npm start || npm run start
+
+>Note: You can also run the development server or by running `npm dev` or `npm run dev` or  production server `npm build` or `npm run build`
+
+[-] After the server is runned open your brower and browse to the following address: 
+
+    localhost:8080
+
+ℹ️ To know more about Leaderboard API see [here](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 ## Authors
 
 👤 **Josh Batey**
@@ -37,7 +59,9 @@
 
 Contributions, issues, and feature requests are welcome!
 
-## Show your support
+## Acknowledgement
+  To all people who help for the accomplishment of this project
+## Show your support 
 
 Give a ⭐️ if you like this project!
 
