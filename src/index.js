@@ -35,13 +35,13 @@ const popup = document.querySelector('.popup');
 submit.addEventListener('click', (e) => {
   e.preventDefault();
   postGames(user.value, score.value).then((res) => {
-    popup.classList.add('show');
+    popup.style.visibility = 'visible';
     popup.innerHTML = `
       <span class="material-symbols-outlined"> task_alt </span>
       <p>${res.result}</p>
     `;
     setTimeout(() => {
-      popup.classList.add('hide');
+      popup.style.visibility = 'hidden';
     }, 3000);
   });
   user.value = '';
