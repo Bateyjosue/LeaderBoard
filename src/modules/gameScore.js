@@ -1,5 +1,6 @@
 export const id = 'hVvIHhXaRjGPzLiECktA';
 
+const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`;
 export const fetchData = async () => {
   const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`);
   const data = await response.json();
@@ -8,7 +9,7 @@ export const fetchData = async () => {
 
 export const postGames = async (users, scores) => {
   const data = { user: users, score: scores };
-  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`,
+  const response = await fetch(url,
     {
       method: 'POST',
       body: JSON.stringify(data),

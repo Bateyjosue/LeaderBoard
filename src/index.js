@@ -11,8 +11,7 @@ fetchData().then((data) => {
     });
   } else {
     containerScore.innerHTML = 'No Score Found';
-    containerScore.style.padding = '1rem';
-    containerScore.style.textAlign = 'center';
+    containerScore.classList.add('table-style');
   }
 });
 
@@ -36,13 +35,13 @@ const popup = document.querySelector('.popup');
 submit.addEventListener('click', (e) => {
   e.preventDefault();
   postGames(user.value, score.value).then((res) => {
-    popup.style.visibility = 'visible';
+    popup.classList.add('show');
     popup.innerHTML = `
       <span class="material-symbols-outlined"> task_alt </span>
       <p>${res.result}</p>
     `;
     setTimeout(() => {
-      popup.style.visibility = 'hidden';
+      popup.classList.add('hide');
     }, 3000);
   });
   user.value = '';
