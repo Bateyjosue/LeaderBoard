@@ -6,7 +6,7 @@
 
 ## Sreenshot<hr>
 
-![](./src/images/screenshot.png.png)
+![](/mockup.png)
 
 ## Built With (Linker)
 
